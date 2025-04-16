@@ -1,4 +1,5 @@
 #to improve: display what could be improved when the pw is Moderate, weak and doesnt met the pw requirenent
+#ask user of password best practise
 #also add option to create system generated password
 
 
