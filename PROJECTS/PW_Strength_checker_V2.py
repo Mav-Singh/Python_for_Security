@@ -5,6 +5,11 @@
 #import modules
 import string
 
+question = input("Do you want to know what is strong password looks like? y/n: ").lower()
+if question == 'y':
+    print("Strong password is atleast 12 characters, with atleast 1 upper, 1 lower, 1 special character and 1 numeric value \n")
+else:
+    print("proceeding further. Loading..... \n")
 #get the password input from the user
 pw = input("Enter your password: ")
 
