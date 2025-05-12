@@ -12,11 +12,11 @@ import random
 
 #Ask user if wants to generate a system generated strong password:
 password = []
-num = [1,2,3,4,5,6,7,8,9,0]
-char = ["!", "@", "#", "$", "%", "^", "&", "*","(",")"]
-low_alph = ["a","b","c"]
-up_alph = ["A", "B", "C"]
-ran = random.choice(char)
+num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+char = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"]
+low_alph = [chr(i) for i in range(97, 123)]  # a to z
+up_alph = [chr(i) for i in range(65, 91)]    # A to Z
+ran = random.choice(low_alph)
 print(ran)
 
 #Create own Password and check password strength:
