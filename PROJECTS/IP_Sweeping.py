@@ -1,3 +1,15 @@
+#An IP sweeping Python script is typically used to identify active hosts (devices) on a network by scanning a range of IP addresses to see which ones respond. The purpose is often to gather network information for system administration, inventory, or cybersecurity tasks.
+
+# add ascii to display IP Sweeper
+ip_sweeper = "
+.___ __________    _________                                                 
+|   |\______   \  /   _____/__  _  __  ____    ____  ______    ____  _______ 
+|   | |     ___/  \_____  \ \ \/ \/ /_/ __ \ _/ __ \ \____ \ _/ __ \ \_  __ \
+|   | |    |      /        \ \     / \  ___/ \  ___/ |  |_> >\  ___/  |  | \/
+|___| |____|     /_______  /  \/\_/   \___  > \___  >|   __/  \___  > |__|   
+                         \/               \/      \/ |__|         \/       "
+print(ip_sweeper)
+    
 #import modules
 import subprocess #this module lets you run commands
 import platform #to detect which OS i am on
