@@ -47,3 +47,41 @@ if len(pw) < 12 and upper and lower and special and digit:
     print("tip: make your password lengthier(at least 12 chars)")
 else:
     print("\nYour password must have \n1. One Char in upper \n2. Atleast one char in lower \n3. Atleast one special char \n4. Atleast one digit \n5. Atleast 8 characters")
+
+
+
+
+----------------V3-----------------------
+def check_password_strength(password):
+    # Check length
+    if len(password) < 6:
+        return "Weak: too short"
+
+    # Check for numbers
+    if not any(char.isdigit() for char in password):
+        return "Weak: no numbers"
+
+    # Check for uppercase letters
+    if not any(char.isupper() for char in password):
+        return "Medium: add uppercase letters"
+
+    # Check for special characters
+    if not any(char in "!@#$%^&*()-_=+" for char in password):
+        return "Strong: add special characters"
+
+    #check for lowercase letter
+    if not any(char.islower() for char in password):
+        return "add lowercase letters"
+
+    return "Extremely Strong"
+
+
+
+# Input password
+user_pass = input("Enter a password: ")
+
+# Call the function and store the result
+strength = check_password_strength(user_pass)
+
+# Print the result
+print("Password strength:", strength)
