@@ -1,4 +1,4 @@
-
+#goal is to make this program handle any complex password or logic and try to make the front end too
 #Program to check the strength of the Password, give examples of strong passwords, and generate superstrong passwords
 
 #Password Strength Checker
